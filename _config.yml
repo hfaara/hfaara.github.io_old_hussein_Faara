@@ -1,0 +1,74 @@
+### Site Settings ###
+title               : Hussein Faara
+description         : >-                               # >- means to ignore newlines until "url:"
+                      “Programs must be written for people to read, and only incidentally
+                      for machines to execute.”  ― Harold Abelson
+
+baseurl             : ""
+url                 : "https://husseinfaara.com/"                               # base hostname & protocol for your site (e.g. http://example.com)
+                 # subpath of your site (e.g. /blog) [IMPORTANT: use "" if your are hosting at https://username.github.io directly]
+#remote_theme       : YoussefRaafatNasry/portfolYOU    # uncomment this if you are using it as a remote theme
+
+### Author Info ###
+author:
+  name              : Hussein Faara
+  image             : /assets/cv_image.jpg
+# behance           : hfaara18
+# dribbble          : your_username
+  email             : faarahussein@gmail.com
+  facebook          : hussein.faara
+  github            : hfaara18
+# gitlab            : your_username
+# instagram         : your_username
+  linkedin          : hussein-faara/
+#  medium            : your_username
+# soundcloud        : your_username
+# spotify           : your_username
+# stackoverflow     : your_user_id
+# tumblr            : your_username.tumblr.com
+# twitch            : your_username
+#  twitter           : your_username
+# vimeo             : your_username
+# youtube           : your_channel_name
+
+
+
+### Pagination ###
+paginate: 6
+paginate_path: "/articles/page-:num/"
+
+
+### Posts Permalink ###
+permalink: articles/:title
+
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+
+
+### Exclude from processing ###
+exclude:
+- README.md
+- CONTRIBUTING.md
+- LICENSE
+- Gemfile
+- Gemfile.lock
+- docs/docs.md
+- docs/github.md
+- docs/elements.md
+- _projects/z-project.md
+- pages/about.md
+- _projects/space-invaders.md
+- _projects/research.md
+- _projects/converter.md
