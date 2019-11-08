@@ -9,7 +9,9 @@
       </div>
     </div>
 
-    <p class="text-muted wow animated slideInUp" data-wow-delay=".15s">{{ site.description }}</p>
-
+    <!-- <p class="text-muted wow animated slideInUp" data-wow-delay=".15s">{{ site.description }}</p> -->
+    {% assign today = site.time | date: '%Y/%m/%d' %}
+    <p class="text-muted wow animated slideInUp" data-wow-delay=".15s">Quote of the day:</p>
+    <p class="text-muted wow animated slideInUp" data-wow-delay=".15s">{{ site.data.quotes[today]["quote"] }}</p>
   </div>
 </div>
